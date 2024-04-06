@@ -93,20 +93,20 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Explore the Projects section to discover a range of
+                          exciting tabs showcasing my work. While one tab
+                          currently has no projects, the other tabs highlight my
+                          expertise in UI/UX design and development. Stay tuned
+                          for updates and new projects coming soon!
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Explore the Projects section to discover a range of
+                          exciting tabs showcasing my work. While one tab
+                          currently has no projects, the other tabs highlight my
+                          expertise in UI/UX design and development. Stay tuned
+                          for updates and new projects coming soon!
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
