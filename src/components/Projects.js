@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -8,7 +8,9 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import React from "react";
 
+// Export a functional component called 'Projects'
 export const Projects = () => {
+  // Define an array of project objects
   const projects = [
     {
       title: "Business Startup",
@@ -128,7 +130,7 @@ export const Projects = () => {
                           exciting tabs showcasing my work. While one tab
                           currently has no projects, the other tabs highlight my
                           expertise in UI/UX design and development. Stay tuned
-                          for updates and new projects coming soon!
+                          for updates and new projectscoming soon!
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
@@ -139,6 +141,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+      {/* Render an image with the 'colorSharp2' source */}
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
