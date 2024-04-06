@@ -14,31 +14,37 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: "https://example.com/project6",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "https://example.com/project6",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: "https://example.com/project6",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: "https://example.com/project6",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "https://example.com/project6",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: "https://example.com/project6",
     },
   ];
 
@@ -87,7 +93,16 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <a
+                                key={index}
+                                href={project.link} // Add a link to each ProjectCard
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <ProjectCard {...project} />
+                              </a>
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
