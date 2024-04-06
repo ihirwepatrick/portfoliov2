@@ -81,11 +81,13 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Hey there! I'm Patrick Ihirwe, a senior software developer
+                    and full-stack enthusiast with 3 years of experience in
+                    JavaScript programming. Specializing in React, Node.js,
+                    Next.js, Vue.js, and Express, I love crafting engaging web
+                    designs and exciting games. Currently studying at Rwanda
+                    Coding Academy, I'm dedicated to pushing the boundaries of
+                    technology. Welcome to my portfolio!
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
