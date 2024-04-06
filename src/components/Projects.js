@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -8,55 +8,45 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import React from "react";
 
-// Export a functional component called 'Projects'
 export const Projects = () => {
-  // Define an array of project objects
   const projects = [
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
-      link: "https://example.com/project1", // Add a link property to each project object
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
-      link: "https://example.com/project2", // Add a link property to each project object
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
-      link: "https://example.com/project3", // Add a link property to each project object
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
-      link: "https://example.com/project4", // Add a link property to each project object
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
-      link: "https://example.com/project5", // Add a link property to each project object
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
-      link: "https://example.com/project6", // Add a link property to each project object
     },
   ];
 
-  // Return the JSX for the Projects component
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
-            {/* Render the TrackVisibility component */}
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -72,14 +62,12 @@ export const Projects = () => {
                     UI/UX design. Dive into the world of innovative designs and
                     captivating user experiences crafted by me.
                   </p>
-                  {/* Render the Tab.Container component */}
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
                       id="pills-tab"
                     >
-                      {/* Render the Nav.Item and Nav.Link components */}
                       <Nav.Item>
                         <Nav.Link eventKey="first">Tab 1</Nav.Link>
                       </Nav.Item>
@@ -90,28 +78,16 @@ export const Projects = () => {
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    {/* Render the Tab.Content component */}
                     <Tab.Content
                       id="slideInUp"
                       className={
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      {/* Render the Tab.Pane components */}
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {/* Render the ProjectCard component for each project */}
                           {projects.map((project, index) => {
-                            return (
-                              <a
-                                key={index}
-                                href={project.link} // Add a link to each ProjectCard
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <ProjectCard {...project} />
-                              </a>
-                            );
+                            return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
@@ -130,7 +106,7 @@ export const Projects = () => {
                           exciting tabs showcasing my work. While one tab
                           currently has no projects, the other tabs highlight my
                           expertise in UI/UX design and development. Stay tuned
-                          for updates and new projectscoming soon!
+                          for updates and new projects coming soon!
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
@@ -141,7 +117,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      {/* Render an image with the 'colorSharp2' source */}
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
