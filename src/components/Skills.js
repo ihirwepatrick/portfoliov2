@@ -66,6 +66,10 @@ export const Skills = () => {
                   <img src={meter3} alt="Image" />
                   <h5>Unreal Engine 5, C++</h5>
                 </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>Flutter (Dart)</h5>
+                </div>
               </Carousel>
             </div>
           </div>

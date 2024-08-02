@@ -2,8 +2,10 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
+import transf from "../assets/img/trabsferme.png"
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import quotes from "../assets/img/qoutes.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import React from "react";
@@ -11,34 +13,40 @@ import React from "react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Quotes Corner Site",
+      description: "A website to chnage the lives of people through quotes",
+      imgUrl: quotes,
+      url: "https://quotes-corner.vercel.app",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      url: "https://gura-kappa.vercel.app",
     },
     {
-      title: "Business Startup",
+      title: "My Behance Portifolio For Figma Designs",
       description: "Design & Development",
       imgUrl: projImg3,
+      url: "https://www.behance.net/ihirwedesigns",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      url: "https://www.quotes-corner.vercel.app",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Transferme UI/UX Design",
+      description: "Design has ended and the app is under development by Patrick Ihirwe",
+      imgUrl: transf,
+      url: "https://www.figma.com/design/3euNRydp6PtSOl0zGNSq0v/Transfermee-UI?node-id=4-1039&t=VjCiRWEEaOBycqJF-1",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      url: "https://quotes-corner.vercel.app",
     },
   ];
 
@@ -56,11 +64,11 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Welcome to my Projects section! Here, you'll discover a
-                    showcase of my main project, Quotes Corner, alongside a
-                    collection of other projects highlighting my expertise in
-                    UI/UX design. Dive into the world of innovative designs and
-                    captivating user experiences crafted by me.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -93,20 +101,20 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
                         <p>
-                          Explore the Projects section to discover a range of
-                          exciting tabs showcasing my work. While one tab
-                          currently has no projects, the other tabs highlight my
-                          expertise in UI/UX design and development. Stay tuned
-                          for updates and new projects coming soon!
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque quam, quod neque provident velit, rem
+                          explicabo excepturi id illo molestiae blanditiis,
+                          eligendi dicta officiis asperiores delectus quasi
+                          inventore debitis quo.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Explore the Projects section to discover a range of
-                          exciting tabs showcasing my work. While one tab
-                          currently has no projects, the other tabs highlight my
-                          expertise in UI/UX design and development. Stay tuned
-                          for updates and new projects coming soon!
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque quam, quod neque provident velit, rem
+                          explicabo excepturi id illo molestiae blanditiis,
+                          eligendi dicta officiis asperiores delectus quasi
+                          inventore debitis quo.
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
