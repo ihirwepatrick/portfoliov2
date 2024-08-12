@@ -6,6 +6,7 @@ import transf from "../assets/img/trabsferme.png"
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import quotes from "../assets/img/qoutes.png";
+import tonite from "../assets/img/tonite.jpeg"
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import React from "react";
@@ -43,9 +44,9 @@ export const Projects = () => {
       url: "https://www.figma.com/design/3euNRydp6PtSOl0zGNSq0v/Transfermee-UI?node-id=4-1039&t=VjCiRWEEaOBycqJF-1",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Tonite UI Design",
+      description: "Music Listening and streaming app UI Design and Under Development",
+      imgUrl: tonite,
       url: "https://quotes-corner.vercel.app",
     },
   ];
